@@ -14,6 +14,12 @@ Turtle Tutorials:
 -------------------------------------------------------
 https://www.youtube.com/watchv=X6XpHrs9KNE&list=PLzgPDYo_3xumT2sfELR4_YV3aojaxkUC9&index=2&ab_channel=Amulya%27sAcademy
 
+Project Names
+______________________________________
+01. HBD
+"Experience the joy of coding with Python Turtle as we create a delightful graphical interface to display 'Happy Birthday' in a unique way!
+Our project features a three-layer birthday cake complete with a candle, making it the perfect surprise for your loved ones.
+Python Turtle's simple and interactive graphics capabilities allow you to design a colorful and fun birthday message.You can personalize it, add your own flair, and share it with friends and family for a special touch to your celebrations. Get ready to spread smiles and birthday cheer with this creative Python Turtle project!"
 
 
 
