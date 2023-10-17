@@ -1,0 +1,147 @@
+#This is a Python code to draw a three layer cake with a HBD wish
+#There are confettis added
+#Customize the wish by adding the name you want
+#The colours can be easily changes according to your preferences
+#Go to this link to get more colours; https://cs111.wellesley.edu/labs/lab02/colors
+
+import turtle
+import random
+
+# Set the background color to black
+#sc = turtle.Screen()
+#turtle.colormode(255)
+#sc.bgcolor(64,64,64)
+turtle.bgcolor("black")
+
+# Create a turtle object
+my_turtle = turtle.Turtle()
+
+# Set the turtle's shape to a turtle
+my_turtle.shape("turtle")
+
+# Set the turtle's color to green
+my_turtle.color("green")
+
+# Move the turtle to the starting position
+my_turtle.penup()
+my_turtle.goto(-150, 0)
+my_turtle.pendown()
+
+# Set the turtle's pen color to red
+my_turtle.pencolor("yellow")
+
+# Write the word "Happy"
+my_turtle.write("Happy", font=("Arial", 36, "bold"))
+
+# Move the turtle to the next position
+my_turtle.penup()
+my_turtle.goto(-50, -50)
+my_turtle.pendown()
+
+# Set the turtle's pen color to blue
+my_turtle.pencolor("plum")
+
+# Write the word "Birthday"
+my_turtle.write("Birthday", font=("Arial", 40, "bold"))
+
+# Move the turtle to the next position
+my_turtle.penup()
+my_turtle.goto(100, -150)
+my_turtle.pendown()
+
+# Set the turtle's pen color back to red
+my_turtle.pencolor("red")
+
+# Write the name
+my_turtle.write("Name", font=("Arial", 65, "bold"))
+
+# Move the turtle to the next position
+my_turtle.penup()
+my_turtle.goto(-250, -180)
+my_turtle.pendown()
+
+# Set the turtle's pen color back to red
+my_turtle.pencolor("white")
+
+# Write the word "Have a Blast BD"
+my_turtle.write("May you enjoy a big slice of cake on your special day this year!!!!", font=("Time New Roman",12,"italic"))
+
+# Function to draw a layer of the cake at a given position
+def draw_cake_layer(x, y, color):
+    my_turtle.penup()
+    my_turtle.goto(x, y)
+    my_turtle.pendown()
+    my_turtle.fillcolor(color)
+    my_turtle.begin_fill()
+    for _ in range(2):
+        my_turtle.forward(200)
+        my_turtle.right(90)
+        my_turtle.forward(50)
+        my_turtle.right(90)
+    my_turtle.end_fill()
+
+# Draw a three-layer cake
+draw_cake_layer(-100, 150, "palegreen")
+draw_cake_layer(-100, 200, "pink")
+draw_cake_layer(-100, 250, "yellow")#top layer
+
+# Function to draw a candle at a given position
+# Draw a candle on the cake
+def draw_candle(x, y):
+    my_turtle.penup()
+    my_turtle.goto(x, y)
+    my_turtle.pendown()
+    my_turtle.pencolor("red")
+    my_turtle.fillcolor("orange")
+    my_turtle.begin_fill()
+    my_turtle.circle(10)
+    my_turtle.end_fill()
+    my_turtle.pencolor("orange")
+    my_turtle.fillcolor("red")
+    my_turtle.begin_fill()
+    my_turtle.circle(6)
+    my_turtle.end_fill()
+
+# Draw a candle on the cake
+draw_candle(5, 320)
+
+def draw_candlebody(x, y, color):
+    my_turtle.penup()
+    my_turtle.goto(x, y)
+    my_turtle.pendown()
+    my_turtle.fillcolor(color)
+    my_turtle.begin_fill()
+    for _ in range(2):
+        my_turtle.forward(10)
+        my_turtle.right(90)
+        my_turtle.forward(50)
+        my_turtle.right(90)
+    my_turtle.end_fill()
+
+# Draw a three-layer cake
+draw_candlebody(0, 300, "yellow")
+
+# Function to draw a piece of confetti at a random position
+def draw_confetti():
+    my_turtle.penup()
+    x = random.randint(-300, 200)
+    y = random.randint(-300, 200)
+    my_turtle.goto(x, y)
+    my_turtle.pendown()
+    my_turtle.dot(10, random.choice(["red", "blue", "yellow", "green", "pink"]))
+
+# Draw 50 pieces of confetti
+for _ in range(50):
+    draw_confetti()
+
+# Hide the turtle when done
+my_turtle.hideturtle()
+
+# Keep the turtle window open
+turtle.done()
+
+
+
+
+
+
