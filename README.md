@@ -16,7 +16,7 @@ https://www.youtube.com/watchv=X6XpHrs9KNE&list=PLzgPDYo_3xumT2sfELR4_YV3aojaxkU
 
 Project Names
 ______________________________________
-01. HBD |
+01. HBD | ----------------------------------------------------------------------------------------------
    
 "Experience the joy of coding with Python Turtle as we create a delightful graphical interface to display 'Happy Birthday' in a unique way!
 Our project features a three-layer birthday cake complete with a candle, making it the perfect surprise for your loved ones.
